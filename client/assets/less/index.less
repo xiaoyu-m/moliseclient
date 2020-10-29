@@ -1,0 +1,123 @@
+@bg-footer: rgba(27, 28, 33, 0.26);
+@bg-color: #010101;
+@media screen {
+  * {
+    user-select: none;
+    text-decoration: none;
+    .float-right {
+      float: right;
+    }
+    .el-message-box * {
+      color: rgb(0, 0, 0);
+      button {
+        span {
+          color: #fff;
+        }
+      }
+    }
+    .el-message-box__header {
+      text-align: center;
+      font-weight: 550;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    body {
+      margin: 60px 0 0 0;
+      background: rgb(54, 54, 54);
+      // background: url('./assets/img/molisebg.jpg') top center no-repeat
+      //   rgb(54, 54, 54);
+      // background-size: 100%;
+      // background-attachment: fixed;
+      transition: 0.2s;
+      #app {
+        .phone_bg {
+          opacity: 0;
+          width: 100%;
+          position: fixed;
+          z-index: -1;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+        header {
+          height: 60px;
+          background: rgba(0, 0, 0, 0.86);
+          padding: 0 5%;
+          width: 100%;
+          position: fixed;
+          top: 0;
+          z-index: 999;
+        }
+        main {
+          padding: 0;
+        }
+        footer {
+          & * {
+            color: #fff;
+          }
+          width: 100%;
+          padding: 20px 0 10px 10px;
+          height: initial !important;
+        }
+      }
+    }
+    @media (min-width: 1190px) {
+      body {
+        background: url("../img/bac.png") no-repeat top center @bg-color;
+        background-size: 100%;
+        background-attachment: fixed;
+        header {
+          padding: 0 10% !important;
+        }
+        footer {
+          padding-top: 80px !important;
+          background: @bg-footer;
+          background-image: linear-gradient(#000000ee, @bg-footer);
+        }
+      }
+    }
+    @media (max-width: 1190px) and (min-width: 768px) {
+      body {
+        background: url("../img/bac.png") no-repeat top center @bg-color;
+        background-size: 100%;
+        background-attachment: fixed;
+
+        footer {
+          padding-top: 80px !important;
+          background: @bg-footer;
+          background-image: linear-gradient(#000000ee, @bg-footer);
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      body {
+        .phone_bg {
+          opacity: 1 !important;
+          transition: 0.4s;
+        }
+        .el-message-box {
+          width: 85% !important;
+          height: 80vh;
+          margin-left: -2px;
+          margin-top: -2px;
+          .el-message-box__message {
+            p {
+              height: calc(80vh - 100px);
+              overflow: hidden;
+              overflow-y: scroll;
+            }
+          }
+        }
+        background: #f7c586;
+        background-size: 100%;
+        .el-main {
+          padding: 0;
+        }
+        footer {
+          background: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+}

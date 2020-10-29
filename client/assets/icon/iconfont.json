@@ -1,0 +1,128 @@
+{
+  "id": "1826864",
+  "name": "molise",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15186110",
+      "name": "系统公告",
+      "font_class": "wenzhang",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "8338689",
+      "name": "点赞",
+      "font_class": "enjoy",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "6129123",
+      "name": "86播放-圆框",
+      "font_class": "bofang",
+      "unicode": "e77e",
+      "unicode_decimal": 59262
+    },
+    {
+      "icon_id": "6446114",
+      "name": "播放",
+      "font_class": "zanting",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "14055534",
+      "name": "更多",
+      "font_class": "gengduo1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "592049",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e790",
+      "unicode_decimal": 59280
+    },
+    {
+      "icon_id": "5809230",
+      "name": "右箭头1",
+      "font_class": "arrowed-right",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "5809241",
+      "name": "左箭头1",
+      "font_class": "arrowed-left",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "657523",
+      "name": "分期－手机",
+      "font_class": "shouji",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "785012",
+      "name": "QQ",
+      "font_class": "qq",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "4657692",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "4933433",
+      "name": "学生",
+      "font_class": "xuesheng",
+      "unicode": "e766",
+      "unicode_decimal": 59238
+    },
+    {
+      "icon_id": "6154432",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e82c",
+      "unicode_decimal": 59436
+    },
+    {
+      "icon_id": "7765153",
+      "name": "家长_班级管理",
+      "font_class": "jiazhang",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "10584851",
+      "name": "年龄",
+      "font_class": "nianling",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "12348041",
+      "name": "dc-icon-省级",
+      "font_class": "sheng",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "12348117",
+      "name": "dc-icon-市级",
+      "font_class": "shi",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    }
+  ]
+}

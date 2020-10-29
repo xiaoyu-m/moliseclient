@@ -1,0 +1,107 @@
+@text-color: #f6b921;
+@text-default: #222;
+@text-color-inverse: rgba(0, 0, 0, 0.5);
+.index_entrance_title_father {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.index_entrance_title {
+  margin-top: 20px;
+  width: 750px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.index_entrance_more {
+  width: 100%;
+  text-align: center;
+}
+.title_con_text {
+  width: auto !important;
+  font-size: 44px !important;
+  letter-spacing: 0.5em;
+  color: @text-color !important;
+  text-shadow: 0 0 10px @text-default;
+  padding-left: 0.5em;
+  text-align: center !important;
+  font-weight: bolder;
+}
+.index_entrance_more span {
+  display: inline-block;
+  position: relative;
+}
+.index_entrance_more span:first-child::after,
+.index_entrance_more span:last-child::after {
+  content: " ";
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to left, @text-color, @text-color-inverse);
+}
+.index_entrance_more span:last-child::after {
+  background: linear-gradient(to right, @text-color, @text-color-inverse);
+  left: 0;
+}
+.index_entrance_more span:first-child::before,
+.index_entrance_more span:last-child::before {
+  content: " ";
+  position: absolute;
+  bottom: 3px;
+  right: -3px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: @text-color;
+  transform: rotate(45deg);
+}
+.index_entrance_more span:last-child::before {
+  left: -3px;
+}
+.index_entrance_more span:first-child img {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+  .index_entrance_title {
+    margin: 16px 0;
+  }
+  .title_con_text {
+    letter-spacing: 0;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title_con_text {
+    font-size: 26px !important;
+    letter-spacing: 0;
+    padding-left: 0;
+  }
+  .index_entrance_more span:first-child,
+  .index_entrance_more span:last-child {
+    width: 60px !important;
+  }
+  .index_entrance_more span:nth-child(2) {
+    margin: 0 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title_con_text {
+    letter-spacing: 0;
+    padding-left: 0;
+  }
+  .index_entrance_more span {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .index_entrance_more span {
+    display: none;
+    &.title_con_text {
+      font-size: 22px !important;
+      display: block;
+    }
+  }
+}

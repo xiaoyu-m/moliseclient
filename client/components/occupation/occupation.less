@@ -1,0 +1,57 @@
+@titleColor: #b88a20;
+//hover + title 的颜色
+@titleBorderColor: #c19b47;
+//边框 + article 的颜色
+@articleColor: #ffffff;
+@black: #000000;
+@fontSize: 15px;
+.window {
+  // width: 1500px;
+  width: 96%;
+  margin: 0 auto;
+  .text {
+    color: @articleColor;
+    font-size: @fontSize + 3px;
+    letter-spacing: 4px;
+    margin: 3% 0;
+  }
+  .el-carousel__item--card {
+    width: 44.5%;
+    left: 5px;
+    // width: 750px;
+    overflow: auto;
+    border: 1px solid @titleBorderColor;
+    color: @articleColor;
+    text-align: center;
+    background: url(../../assets/img/logo_orange_min.png) no-repeat center
+      center #4e4e4e;
+    padding: 0 25px;
+    & > h1 {
+      font-weight: 600;
+    }
+    & > h4 {
+      text-align: center;
+      position: relative;
+    }
+    & > h4::after {
+      content: "";
+      width: 10%;
+      height: 1px;
+      background-color: #000;
+      display: block;
+      position: absolute;
+      margin-left: 45%;
+      margin-top: 2%;
+    }
+    & > span {
+      width: 100%;
+      float: left;
+      display: inline-block;
+      font-size: @fontSize - 3px;
+      line-height: 24px;
+    }
+  }
+  button {
+    top: 40%;
+  }
+}

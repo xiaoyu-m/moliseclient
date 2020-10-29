@@ -1,0 +1,190 @@
+/* 其他页面入口大框 */
+.index_entrance_con {
+  text-align: center;
+  width: 100%;
+  /* position: relative; */
+  /* white-space: nowrap; */
+}
+
+/* 其他页面入口小框 */
+.index_entrance_con_window {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: #735d2e 1px solid;
+  box-sizing: border-box;
+  /* background-color: red; */
+  overflow: hidden;
+  @media screen {
+    @media (max-width: 1800px) {
+      height: 440px;
+    }
+
+    @media (max-width: 1600px) {
+      height: 390px;
+    }
+
+    @media (max-width: 1460px) {
+      height: 350px;
+    }
+
+    @media (max-width: 1300px) {
+      height: 320px;
+    }
+
+    @media (max-width: 1200px) {
+      height: 300px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 300px;
+    }
+
+    @media (max-width: 930px) {
+      height: 260px;
+    }
+
+    // @media (max-width: 768px) {
+
+    // }
+  }
+}
+
+.index_entrance_con_window_img {
+  position: absolute;
+  transition: all 1s;
+  z-index: 0;
+}
+
+.index_entrance_con_window_img img {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: relative;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.index_entrance_con_window_text_group {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  height: 70px;
+  transition: all 0.2s ease;
+  background-color: #000000;
+  z-index: 10;
+}
+
+.index_entrance_con_window_text {
+  position: relative;
+  height: 70px;
+  color: #ffffff;
+  letter-spacing: 0.25em;
+  font-size: 20px;
+  border-top: 2px solid #735d2e;
+  border-bottom: 2px solid #735d2e;
+  line-height: 70px;
+}
+
+.index_entrance_con_window_text > div {
+  left: 50%;
+  background-color: #000000;
+  transform: translate(-50%);
+  top: -25px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #735d2e;
+  position: absolute;
+  line-height: 30px;
+  padding: 5px;
+}
+
+.index_entrance_con_window_text > div img {
+  width: 100%;
+}
+
+.index_entrance_con_window_more {
+  color: #91743b;
+  line-height: 30px;
+}
+
+.teacher_before {
+  transition: all 1s ease;
+}
+
+.teacher_after {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  top: 0%;
+  color: #ffffff;
+  // background: url(../../../static/img/teacher/logo_teacher_bg.png) no-repeat  center center;
+  opacity: 0;
+  position: absolute;
+  /* transform: rotateY(180deg); */
+  /* backface-visibility: hidden; */
+  transition: all 1s ease;
+}
+
+/* 背景图片 */
+.teacher_after_bgimg {
+}
+
+.teacher_after p {
+  color: #ba872f;
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.teacher_after ul {
+  padding: 1em 2em;
+}
+
+.teacher_after ul li {
+  text-align: left;
+  line-height: 2em;
+  text-indent: 2em;
+}
+
+.index_entrance_con_window:hover .teacher_after {
+  /* transform: rotateY(0deg); */
+  /* backface-visibility: show; */
+  opacity: 1;
+  top: 0%;
+}
+
+.index_entrance_con_window:hover .index_entrance_con_window_img {
+  transform: scale(1.2);
+  /* transform: rotateY(180deg); */
+  /* backface-visibility: hidden; */
+}
+
+.index_entrance_con_window:hover .index_entrance_con_window_text_group {
+  bottom: -100%;
+}
+
+/* 滚动条整体部分 */
+.teacher_after::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+/* scroll轨道背景 */
+.teacher_after::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+/* 滚动条中能上下移动的小块 */
+.teacher_after::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+}

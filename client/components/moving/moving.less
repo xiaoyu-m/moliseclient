@@ -1,0 +1,93 @@
+.bg_mv_father {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+.bg_mv {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.bg_mv video {
+  right: 0;
+  bottom: 0; /* //视频位置 */
+  min-width: 100%;
+  min-height: 100%; /* //不会因视频尺寸造成页面需要滚动 */
+  width: auto;
+  height: auto; /* //尺寸保持原视频大小 */
+  z-index: -100; /* //z轴定位，小于0即可 */
+  -webkit-filter: grayscale(
+    20%
+  ); /* //添加灰度蒙版，如果设定为100%则视频显示为黑白 */
+}
+/* 背景视频蒙版 */
+.bg_mv_father_mb {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.index_imgs {
+  position: absolute;
+  user-select: none;
+  top: 45%;
+  left: 50%;
+  z-index: 3;
+  text-align: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  transform: translate(-50%, -50%);
+}
+.index_imgs img {
+  display: block;
+}
+.index_imgs img:last-child {
+  cursor: pointer;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%);
+  transform-origin: 0% 50%;
+  transition: all 0.5s ease;
+  /* transform:rotateY(180deg) translate(-50%,-50%); */
+}
+.index_imgs img:last-child:hover {
+  opacity: 0.7;
+  width: 120px;
+  /* transform:rotate(360deg) translate(-50%); */
+}
+/* 视频 */
+.index_play_mv {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+}
+.index_play_mv div {
+  position: relative;
+}
+.index_play_mv div video {
+  width: 600px;
+}
+.index_close {
+  user-select: none;
+  width: 50px;
+  position: absolute;
+  left: 550px;
+}
+.index_close img {
+  width: 100%;
+  cursor: pointer;
+  top: 0 !important;
+  transition: all 0.5s ease;
+}
+.index_close img:hover {
+  transform: rotate(180deg);
+}

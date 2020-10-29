@@ -1,0 +1,96 @@
+@font-title: 18px;
+@font-default: 14px;
+@text-default: #000;
+.float-right {
+  float: right;
+}
+.m-5 {
+  margin: 5px 0;
+}
+.m-0 {
+  margin: 0;
+}
+
+@media screen {
+  .el-pagination {
+    text-align: right;
+  }
+  .youth_total {
+    .youthlist {
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 10px 0;
+        background: rgba(255, 255, 255, 0.281);
+        padding: 10px 10px 0 10px;
+
+        box-shadow: 0 0 15px #0004;
+        height: initial;
+        clear: both;
+        &:first-child {
+          border-radius: 3px 3px 0 0;
+        }
+        &:last-child {
+          border-radius: 0 0 3px 3px;
+        }
+        .el-image {
+          width: 130px;
+          height: 80px !important;
+          display: inline-block;
+          img {
+            width: 100%;
+          }
+        }
+        .youth-info {
+          box-sizing: border-box;
+          padding-left: 10px;
+          width: calc(100% - 140px);
+          vertical-align: top;
+          display: inline-block;
+          color: @text-default;
+          .youth-caption {
+            margin: 5px 0;
+            font-size: @font-title;
+            font-weight: 900;
+          }
+          .icon-enjoy {
+            color: #666;
+          }
+          button {
+            position: relative;
+            top: -5px !important;
+          }
+          span {
+            font-size: @font-default;
+          }
+        }
+      }
+    }
+    .el-pagination {
+      li,
+      button,
+      button:disabled {
+        background: rgba(255, 255, 255, 0.2);
+        margin-right: 5px;
+        color: #5a69f3;
+        border-radius: 4px;
+      }
+      li {
+        &.active {
+          background: #f3695a;
+          box-shadow: 0 0 10px #222;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .youth_total {
+    }
+  }
+  @media (max-width: 768px) {
+    .youth_total {
+    }
+  }
+}

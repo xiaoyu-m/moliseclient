@@ -1,0 +1,129 @@
+@text-title: 16px;
+@text-default: 14px;
+@imgWitdh: 120px;
+@li-bg: #07070f;
+@li-bg-sm: #0006;
+@img-height: 160px;
+@img-height-sm: 130px;
+@img-height-xs: 100px;
+@media screen {
+  .wvideo-list {
+    padding: 0;
+    li {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 5px 25px 40px;
+      position: relative;
+      margin: 0;
+      top: 0;
+      transition: 0.3s;
+      &:hover {
+        top: -10px;
+      }
+      a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        .iconfont {
+          position: absolute;
+          left: (@imgWitdh / 2)-10px;
+          top: 34%;
+          font-size: 24px;
+          color: #000;
+          z-index: 9;
+        }
+        .el-image {
+          display: inline-block;
+          vertical-align: top;
+        }
+        .wvideo-info {
+          display: inline-block;
+          vertical-align: top;
+          text-indent: 0.3em;
+          width: 100%;
+          * {
+            margin: 4px 0;
+          }
+          .wvideo-title {
+            font-size: @text-title;
+            display: block;
+            width: 100%;
+            padding: 20px;
+            font-weight: 800;
+            box-sizing: border-box;
+          }
+          .wvideo-txt {
+            font-size: @text-default;
+            color: #ddd;
+            padding: 20px 0;
+            width: calc(100% - 40px);
+            margin-left: 20px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1500px) {
+    .wvideo-list {
+      li {
+        width: 33.3333%;
+        a {
+          background: @li-bg;
+          color: #fff;
+          img {
+            height: @img-height;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1500px) and (min-width: 1190px) {
+    .wvideo-list {
+      li {
+        width: 33.3333%;
+        a {
+          background: @li-bg;
+          color: #fff;
+          img {
+            height: @img-height-sm;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1190px) and (min-width: 768px) {
+    .wvideo-list {
+      li {
+        width: 33.3333%;
+        a {
+          background: @li-bg;
+          color: #fff;
+          img {
+            height: @img-height;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .wvideo-list {
+      li {
+        padding: 10px;
+        width: 50%;
+        a {
+          background: @li-bg-sm;
+          color: #fff;
+          font-size: 22px;
+          img {
+            height: @img-height-xs;
+            background: @li-bg-sm;
+          }
+        }
+      }
+    }
+  }
+}

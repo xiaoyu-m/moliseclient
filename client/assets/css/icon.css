@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'icon';  /* project id 1782808 */
+  src: url('//at.alicdn.com/t/font_1782808_xga43ywbrr.ttf') format('truetype');
+}
+
+.icon {
+	font-family: "icon" !important;
+	padding: 15rpx;
+	font-size: 24px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

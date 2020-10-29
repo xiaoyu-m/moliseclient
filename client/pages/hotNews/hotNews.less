@@ -1,0 +1,89 @@
+@media screen {
+  .page-banner {
+    font-family: "Oswald", cursive !important;
+    position: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    .banner-inner {
+      position: relative;
+      display: block;
+      margin-top: -20px;
+      padding: 10% 0 !important;
+      background: url("../../assets/img/banner/hotNews.jpg") no-repeat top
+        center;
+      background-size: cover;
+      .bread-crumb {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        li {
+          position: relative;
+          float: left;
+          font-size: 16px;
+          line-height: 30px;
+          color: #ffffff;
+          font-weight: 400;
+          text-transform: uppercase;
+          cursor: default;
+          padding-right: 15px;
+          margin-right: 15px;
+          &:first-child:before {
+            position: absolute;
+            right: -3px;
+            font-size: 18px;
+            line-height: 30px;
+            color: #ffffff;
+            font-weight: 400;
+            content: "-";
+          }
+          a {
+            color: #ffffff;
+            font-weight: 400;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+          }
+        }
+      }
+
+      h1 {
+        margin: 0;
+        position: relative;
+        font-size: 72px;
+        color: #ffffff;
+        line-height: 1.2em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .hotNews_total {
+    transition: 0.4s;
+    margin: 0 auto;
+  }
+  @media (min-width: 1500px) {
+    .hotNews_total {
+      width: 1190px;
+    }
+  }
+  @media (min-width: 1500px) and (min-width: 1190px) {
+    .hotNews_total {
+      width: 80%;
+    }
+  }
+  @media (max-width: 1190px) and (min-width: 768px) {
+    .hotNews_total {
+      width: 92%;
+    }
+  }
+  @media (max-width: 768px) {
+    .hotNews_total {
+      width: 96%;
+    }
+  }
+}

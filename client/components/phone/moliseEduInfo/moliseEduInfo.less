@@ -1,0 +1,58 @@
+@fontSize: 15px;
+.box {
+  width: 100%;
+  .img {
+    width: 100%;
+    height: 250px;
+    background-image: url(../../../assets/img/introduceimage/C10.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .text {
+    letter-spacing: 0.15em;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: @fontSize - 2px;
+    padding: 3%;
+  }
+  @media screen {
+    @media (min-width: 450px) and (max-width: 550px) {
+      .img {
+        height: 300px;
+      }
+      .text {
+        font-size: @fontSize - 1.5px;
+      }
+    }
+    @media (min-width: 551px) and (max-width: 650px) {
+      .img {
+        height: 350px;
+      }
+      .text {
+        font-size: @fontSize - 1px;
+      }
+    }
+    @media (min-width: 651px) and (max-width: 708px) {
+      .img {
+        height: 350px;
+      }
+      .text {
+        font-size: @fontSize - 0.5px;
+      }
+    }
+    @media (min-width: 709px) and (max-width: 768px) {
+      .img {
+        height: 400px;
+      }
+      .text {
+        font-size: @fontSize;
+      }
+    }
+    @media (min-width: 769px) and (max-width: 3220px) {
+      .img {
+        display: none;
+      }
+    }
+  }
+}

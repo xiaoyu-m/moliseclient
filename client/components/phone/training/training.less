@@ -1,0 +1,44 @@
+@fontSize: 15px;
+.box {
+  margin: 5% 0;
+  color: #fff;
+  .row {
+    width: 96%;
+    padding: 0 2%;
+    margin-top: 2%;
+    text-align: center;
+    height: 30px;
+    .trainingitem {
+      border: 2px solid rgb(155, 127, 65);
+      color: rgb(192, 187, 159);
+      border-radius: 2px;
+      background-color: rgb(17, 27, 34);
+    }
+    .row_item {
+      width: 22%;
+      font-size: @fontSize - 3px;
+      height: 30px;
+      line-height: 30px;
+      float: left;
+      margin-left: 1%;
+      overflow: hidden;
+    }
+    @media screen {
+      @media (min-width: 450px) and (max-width: 550px) {
+        .row-item {
+          font-size: @fontSize + 2px !important;
+        }
+      }
+    }
+  }
+
+  .btn {
+    width: 85%;
+    margin: 0 5%;
+    margin-top: 5%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #a29696;
+  }
+}

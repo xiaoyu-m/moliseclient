@@ -1,0 +1,65 @@
+@text-title: 16px;
+@text-default: 14px;
+@imgWitdh: 120px;
+@li-bg: #07070f;
+@li-bg-sm: #0006;
+@img-height: 160px;
+@img-height-sm: 130px;
+@img-height-xs: 100px;
+@media screen {
+  .video_total {
+    margin: 20px auto 45px;
+    .v-title {
+      font-size: 28px;
+      color: #fff;
+      padding: 10px 0;
+      i {
+        font-size: 32px;
+        padding-left: 5px;
+        padding-right: 10px;
+      }
+    }
+    .v-time {
+      font-size: 14px;
+      text-align: right;
+      color: #ddd;
+      padding: 5px 0;
+    }
+  }
+  @media (min-width: 1500px) {
+    .video_total {
+      width: 1190px;
+      .video-txt {
+        background: @li-bg;
+        padding: 20px;
+      }
+    }
+  }
+  @media (max-width: 1500px) and (min-width: 1190px) {
+    .video_total {
+      width: 60%;
+      .video-txt {
+        background: @li-bg;
+        padding: 20px;
+      }
+    }
+  }
+  @media (max-width: 1190px) and (min-width: 768px) {
+    .video_total {
+      width: 80%;
+      .video-txt {
+        background: @li-bg-sm;
+        padding: 10px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .video_total {
+      width: 94%;
+      .video-txt {
+        background: @li-bg-sm;
+        padding: 10px;
+      }
+    }
+  }
+}

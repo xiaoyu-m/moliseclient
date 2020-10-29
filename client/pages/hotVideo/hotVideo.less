@@ -1,0 +1,32 @@
+$a: 1px;
+@media screen {
+  .hotvideo_total {
+    margin: $a auto;
+    padding: 0 8px;
+    box-sizing: border-box;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+  @media (min-width: 1500px) {
+    .hotvideo_total {
+      width: 60%;
+    }
+  }
+  @media (max-width: 1500px) and (min-width: 1190px) {
+    .hotvideo_total {
+      width: 80%;
+    }
+  }
+  @media (max-width: 1190px) and (min-width: 768px) {
+    .hotvideo_total {
+      width: 96%;
+    }
+  }
+  @media (max-width: 768px) {
+    .hotvideo_total {
+      width: 96%;
+    }
+  }
+}

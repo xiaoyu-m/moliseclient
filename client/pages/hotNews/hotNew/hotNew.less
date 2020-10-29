@@ -1,0 +1,29 @@
+@bg-color: rgba(255, 255, 255, 0.5);
+@media screen {
+  .howNew_total {
+    margin: 0 auto;
+    padding: 20px;
+    background: @bg-color;
+    box-sizing: border-box;
+  }
+  @media (min-width: 1200px) {
+    .howNew_total {
+      width: 80%;
+    }
+  }
+  @media (max-width: 1200px) and (min-width: 768px) {
+    .howNew_total {
+      width: 80%;
+    }
+  }
+  @media (max-width: 768px) and (min-width: 500px) {
+    .howNew_total {
+      width: 92%;
+    }
+  }
+  @media (max-width: 768px) {
+    .howNew_total {
+      width: 100%;
+    }
+  }
+}

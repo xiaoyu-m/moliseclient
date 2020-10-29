@@ -1,0 +1,66 @@
+@titleColor: #b88a20;
+	//hover + title 的颜色
+	@titleBorderColor: #c19b47;
+	//边框 + article 的颜色
+	@articleColor: #ffffff;
+	@black: #000000;
+	@fontSize: 15px;
+
+	.clubInfo {
+		// width: 1500px;
+		margin: 0 auto;
+		color: @articleColor;
+		.border-col {
+			// padding: 35px;
+			height: 300px;
+			text-indent: 2em;
+			background-color: rgba(0, 0, 0, .45);
+			padding: 25px 45px;
+			overflow: auto;
+		}
+
+		.border-colTcg {
+			background-image: url(../../assets/club/tcg_min.png);
+			background-position: center center;
+			background-size: 400px;
+			background-repeat: no-repeat;
+		}
+
+		.border-colAxi {
+			background-image: url(../../assets/club/axilogo.png);
+			background-position: center center;
+			background-size: 300px;
+			background-repeat: no-repeat;
+		}
+		@media screen {
+			@media (max-width:768px) {
+				.border-colTcg{
+					text-indent: none;
+					background-size:200px ;
+					padding: 15px 25px;
+					letter-spacing: 0.0em;
+						white-space:normal;
+						word-break:break-all;
+						word-wrap: break-word;
+				}
+				.border-colAxi{
+					text-indent: none;
+					background-size: 200px;
+				}
+			}
+			@media (max-width:350px){
+				.border-colTcg{
+					padding: 15px 15px;
+					font-size:@fontSize - 3px ;
+					line-height: 22px;
+					height: 200px;
+				}
+				.border-colAxi{
+					padding: 15px 15px;
+					font-size:@fontSize - 3px ;
+					line-height: 22px;
+					height: 200px;
+				}
+			}
+	  }
+	}

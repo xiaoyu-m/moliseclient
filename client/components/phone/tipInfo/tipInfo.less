@@ -1,0 +1,71 @@
+@text-default: #222;
+@media screen {
+  .tipinfo_total {
+    color: #fff;
+    padding: 0 8px;
+    .tipingo-item {
+      padding: 0 10px;
+      margin: 5px 0;
+      color: @text-default!important;
+      transition: 0.4s;
+      border-radius: 0 0 5px 5px;
+      background: rgba(248, 228, 194, 0.5);
+      &:first-child {
+        border-radius: 5px 5px 0 0;
+        background: rgba(248, 228, 194, 0.7);
+      }
+      &:nth-child(2) {
+        border-radius: 0;
+        background: rgba(248, 228, 194, 0.65);
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      div {
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        &.icon-d {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          box-shadow: 0 0 5px #4d4d4d2f;
+          margin-top: 25px;
+          border-radius: 5px;
+          .iconfont {
+            font-size: 30px;
+            border-radius: 3px;
+          }
+        }
+        &.tip-item {
+          width: calc(100% - 45px);
+          padding: 5px 10px 5px 5px;
+        }
+      }
+      p {
+        font-size: 12px;
+        &:first-child {
+          margin-bottom: 3px;
+          font-size: 16px;
+        }
+        &:last-child {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .tipinfo_total {
+    }
+  }
+  @media (max-width: 1200px) and (min-width: 768px) {
+    .tipinfo_total {
+    }
+  }
+  @media (max-width: 768px) and (min-width: 500px) {
+    .tipinfo_total {
+    }
+  }
+}

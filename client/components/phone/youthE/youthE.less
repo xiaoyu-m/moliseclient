@@ -1,0 +1,51 @@
+@keyframes autoLeft {
+  0% {
+    right: 5px;
+  }
+  50% {
+    right: 8px;
+  }
+  100% {
+    right: 5px;
+  }
+}
+@media screen {
+  .youthE-list {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    .ly-tab-item {
+      width: 5rem;
+      max-height: 80px;
+      background: #444444;
+    }
+    .more {
+      position: absolute;
+      top: 46%;
+      right: 8px;
+      z-index: 99;
+      color: #fff;
+      animation: autoLeft 0.6s infinite;
+    }
+  }
+  @media (min-width: 1200px) {
+  }
+  @media (max-width: 1200px) and (min-width: 768px) {
+  }
+  @media (max-width: 768px) and (min-width: 400px) {
+    .swiper-container {
+      height: 180px !important;
+      img {
+        height: 100% !important;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .swiper-container {
+      height: 180px !important;
+      img {
+        height: 100% !important;
+      }
+    }
+  }
+}
